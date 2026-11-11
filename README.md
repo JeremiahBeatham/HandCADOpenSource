@@ -15,11 +15,11 @@ HandCAD links Open CASCADE Technology (OCCT) 7.9.3, which is free software licen
 
 For each released version of the app, a GitHub release in this repository holds the OCCT source we built, the build script and pin for that version, and the relink kit (HandCAD's object files and static archives for each platform slice, and the app-level object files). Material for each version is kept for at least three years after that version's last distribution.
 
-No releases have been published yet; the first one goes up before the app is distributed.
+The first release, `occt-7.9.3`, holds the OCCT 7.9.3 source tarball (unmodified), its checksum, and the build script and pin. The relink kit for each app build is added to the release for that build.
 
 ## What this repository is not
 
-It holds no HandCAD application source code. HandCAD's own code is not offered under the LGPL, and the offer here covers OCCT only: it lets you swap in your own build of OCCT.
+It holds no HandCAD application source code. HandCAD's own code is not offered under the LGPL, and the offer here covers OCCT only: it lets you swap in your own build of OCCT. It does not promise that a relinked app can be code-signed, installed or run on any device; Apple controls that, not us.
 
 The scripts in `build/` are provided so you can rebuild OCCT and relink. License terms for them, and the wording of HandCAD's license notices, are being finalized.
 

@@ -1,9 +1,9 @@
 #!/usr/bin/env bash
-# Build the pinned OCCT release (core/tools/occt.env) as static libraries with a
+# Build the pinned OCCT release (build/occt.env) as static libraries with a
 # minimal module set: FoundationClasses, ModelingData, ModelingAlgorithms,
 # DataExchange. No Draw, Tcl/Tk, OpenGL, FreeType, X11 or samples.
 #
-# Usage: core/tools/build-occt.sh [host|ios-device|ios-simulator|macos]
+# Usage: build/build-occt.sh [host|ios-device|ios-simulator|macos]
 #   macos: arm64, minimum macOS $HANDCAD_MACOS_DEPLOYMENT_TARGET (default 14.0) — the
 #          xcframework's macOS slice for HandCADKit's `swift test`. `host` uses the
 #          toolchain default (on a Mac, the running macOS version).
@@ -87,7 +87,7 @@ cmake --build "$BUILD" --parallel "$JOBS"
 cmake --install "$BUILD"
 end=$(date +%s)
 
-# Licence texts travel with every install (needed for the notices screen and relink kit).
+# License texts travel with every install.
 cp "$SRC/LICENSE_LGPL_21.txt" "$SRC/OCCT_LGPL_EXCEPTION.txt" "$PREFIX/"
 touch "$PREFIX/.handcad-occt-$OCCT_COMMIT"
 echo "OCCT $OCCT_VERSION ($PLATFORM) built in $((end - start)) s -> $PREFIX"

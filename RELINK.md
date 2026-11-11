@@ -18,3 +18,7 @@ libtool -static -o libHandCADCore.a \
 `libhandcad_doc.a` contains nlohmann/json 3.12.0, which is MIT licensed (`LICENSES/NLOHMANN-JSON-MIT.txt`).
 
 The app-level object files come from the Xcode archive of each release and are attached to that release. If you cannot reach a download, write to handcadapp@gmail.com.
+
+## What this covers
+
+This lets you rebuild OCCT, modified or not, and relink it with HandCAD's libraries for your own use. We do not promise that a relinked app can be code-signed, installed or run on any device. Apple controls code signing and installation on iPhone, and that is not our decision. A relinked build is yours and may not be presented as HandCAD.
