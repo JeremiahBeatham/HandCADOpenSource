@@ -21,7 +21,7 @@ The first release, `occt-7.9.3`, holds the OCCT 7.9.3 source tarball (unmodified
 
 It holds no HandCAD application source code. HandCAD's own code is not offered under the LGPL, and the offer here covers OCCT only: it lets you swap in your own build of OCCT. It does not promise that a relinked app can be code-signed, installed or run on any device; Apple controls that, not us.
 
-The scripts in `build/` are provided so you can rebuild OCCT and relink. License terms for them, and the wording of HandCAD's license notices, are being finalized.
+The scripts in `build/` are provided so you can rebuild OCCT and relink. They are licensed under the GNU Lesser General Public License, version 2.1, the same as OCCT (see `LICENSES/LGPL-2.1.txt`).
 
 ## Contact
 
