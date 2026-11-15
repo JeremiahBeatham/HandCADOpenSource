@@ -1,5 +1,11 @@
 # Relinking OCCT with HandCAD
 
+**Before you start:**
+- You may modify the Open CASCADE Technology (OCCT) library for your own use, relink HandCAD with it using this kit, and inspect, analyze, test and debug how HandCAD works with your modified OCCT.
+- A relinked or modified HandCAD is not a version we built, signed or support. We make no promise that it will install, run or behave as HandCAD does.
+- HandCAD's own object files in this kit are for your own use only. They may not be shared, published, sold or used to make another product or service. OCCT itself, and your changes to it, stay under the LGPL 2.1 with the Open CASCADE exception, and you may share those under its terms.
+- Full terms: the HandCAD license agreement.
+
 Each release of this repository includes a relink kit. A slice folder in the kit (for example `ios-device` or `ios-simulator`) holds HandCAD's core static archives.
 
 1. Get the OCCT source for the release (see `OCCT-SOURCE.md`) and, if you like, modify it.
